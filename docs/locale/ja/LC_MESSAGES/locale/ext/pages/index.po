@@ -1,0 +1,1141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2021, Rapptz & 2021-present, Pycord Development
+# This file is distributed under the same license as the Pycord package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pycord 2.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 10:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../ext/pages/index.rst:4
+msgid "``discord.ext.pages`` -- A pagination extension module"
+msgstr ""
+
+#: ../../ext/pages/index.rst:8
+msgid ""
+"This module provides an easy pagination system with buttons, page groups,"
+" and custom view support."
+msgstr ""
+
+#: ../../ext/pages/index.rst:10
+msgid "Example usage in a cog:"
+msgstr ""
+
+#: ../../ext/pages/index.rst:292
+msgid "API Reference"
+msgstr ""
+
+#: ../../ext/pages/index.rst:295
+msgid "Page"
+msgstr ""
+
+#: discord.ext.pages.pagination.Page:1 of
+msgid "Represents a page shown in the paginator."
+msgstr ""
+
+#: discord.ext.pages.pagination.Page:3 of
+msgid ""
+"Allows for directly referencing and modifying each page as a class "
+"instance."
+msgstr ""
+
+#: discord.ext.pages.pagination.Page discord.ext.pages.pagination.Page.callback
+#: discord.ext.pages.pagination.PageGroup
+#: discord.ext.pages.pagination.Paginator
+#: discord.ext.pages.pagination.Paginator.cancel
+#: discord.ext.pages.pagination.Paginator.disable
+#: discord.ext.pages.pagination.Paginator.edit
+#: discord.ext.pages.pagination.Paginator.goto_page
+#: discord.ext.pages.pagination.Paginator.interaction_check
+#: discord.ext.pages.pagination.Paginator.page_action
+#: discord.ext.pages.pagination.Paginator.respond
+#: discord.ext.pages.pagination.Paginator.send
+#: discord.ext.pages.pagination.Paginator.update
+#: discord.ext.pages.pagination.PaginatorButton
+#: discord.ext.pages.pagination.PaginatorButton.callback
+#: discord.ext.pages.pagination.PaginatorMenu
+#: discord.ext.pages.pagination.PaginatorMenu.callback
+#: discord.ui.select.Select.add_option discord.ui.select.Select.append_option
+#: discord.ui.view.View.add_item discord.ui.view.View.disable_all_items
+#: discord.ui.view.View.enable_all_items discord.ui.view.View.from_message
+#: discord.ui.view.View.on_check_failure discord.ui.view.View.on_error
+#: discord.ui.view.View.remove_item of
+msgid "パラメータ"
+msgstr ""
+
+#: discord.ext.pages.pagination.Page:5 of
+msgid ""
+"The content of the page. Corresponds to the "
+":class:`discord.Message.content` attribute."
+msgstr ""
+
+#: discord.ext.pages.pagination.Page:7 of
+msgid ""
+"The embeds of the page. Corresponds to the "
+":class:`discord.Message.embeds` attribute."
+msgstr ""
+
+#: discord.ext.pages.pagination.Page:9 of
+msgid "A list of local files to be shown with the page."
+msgstr ""
+
+#: discord.ext.pages.pagination.Page:11 of
+msgid ""
+"The custom view shown when the page is visible. Overrides the "
+"`custom_view` attribute of the main paginator."
+msgstr ""
+
+#: discord.ext.pages.pagination.Page.callback:1
+#: discord.ext.pages.pagination.Paginator.interaction_check:1
+#: discord.ext.pages.pagination.PaginatorButton.callback:1
+#: discord.ext.pages.pagination.PaginatorMenu.callback:1
+#: discord.ui.view.View.on_error:1 of
+msgid "|coro|"
+msgstr ""
+
+#: discord.ext.pages.pagination.Page.callback:3 of
+msgid ""
+"The coroutine associated to a specific page. If `Paginator.page_action()`"
+" is used, this coroutine is called."
+msgstr ""
+
+#: discord.ext.pages.pagination.Page.callback:5 of
+msgid "The interaction associated with the callback, if any."
+msgstr ""
+
+#: discord.ext.pages.pagination.Page.update_files:1 of
+msgid ""
+"Updates the files associated with the page by re-uploading them. "
+"Typically used when the page is changed."
+msgstr ""
+
+#: discord.ext.pages.Page.content:1 of
+msgid "Gets the content for the page."
+msgstr ""
+
+#: discord.ext.pages.Page.embeds:1 of
+msgid "Gets the embeds for the page."
+msgstr ""
+
+#: discord.ext.pages.Page.custom_view:1 of
+msgid "Gets the custom view assigned to the page."
+msgstr ""
+
+#: discord.ext.pages.Page.files:1 of
+msgid "Gets the files associated with the page."
+msgstr ""
+
+#: ../../ext/pages/index.rst:303
+msgid "Paginator"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:1 of
+msgid ""
+"Creates a paginator which can be sent as a message and uses buttons for "
+"navigation."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:6 of
+msgid ""
+":param List[Union[List[:class:`discord.Embed`]: The list of "
+":class:`PageGroup` objects, :class:`Page` objects, strings, embeds, or "
+"list of embeds to paginate."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:6
+#: discord.ext.pages.pagination.Paginator:9 of
+msgid ""
+"If a list of :class:`PageGroup` objects is provided and `show_menu` is "
+"``False``, only the first page group will be displayed."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:9 of
+msgid ""
+":param :class:`discord.Embed`]]]: The list of :class:`PageGroup` objects,"
+" :class:`Page` objects, strings, embeds, or list of embeds to paginate."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:25
+#: discord.ext.pages.pagination.Paginator:11
+#: discord.ext.pages.pagination.Paginator.update:9 of
+msgid "Whether to show disabled buttons."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:27
+#: discord.ext.pages.pagination.Paginator:13
+#: discord.ext.pages.pagination.Paginator.update:11 of
+msgid "Whether to show the page indicator when using the default buttons."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:15
+#: discord.ext.pages.pagination.Paginator.update:13 of
+msgid ""
+"Whether to show a select menu that allows the user to switch between "
+"groups of pages."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:17
+#: discord.ext.pages.pagination.Paginator.update:17 of
+msgid ""
+"The placeholder text to show in the page group menu when no page group "
+"has been selected yet. Defaults to \"Select Page Group\" if not provided."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:29
+#: discord.ext.pages.pagination.Paginator:20
+#: discord.ext.pages.pagination.Paginator.update:15 of
+msgid "Whether only the original user of the command can change pages."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:31
+#: discord.ext.pages.pagination.Paginator:22
+#: discord.ext.pages.pagination.Paginator.update:20 of
+msgid "Whether the buttons get disabled when the paginator view times out."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:33
+#: discord.ext.pages.pagination.Paginator:24
+#: discord.ext.pages.pagination.Paginator.update:22 of
+msgid ""
+"Whether to use the default buttons (i.e. ``first``, ``prev``, "
+"``page_indicator``, ``next``, ``last``)"
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:35
+#: discord.ext.pages.pagination.Paginator:26
+#: discord.ext.pages.pagination.Paginator.update:24 of
+msgid ""
+"The row where the default paginator buttons are displayed. Has no effect "
+"if custom buttons are used."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:37
+#: discord.ext.pages.pagination.Paginator:28
+#: discord.ext.pages.pagination.Paginator.update:26 of
+msgid ""
+"Whether to loop the pages when clicking prev/next while at the first/last"
+" page in the list."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:30 of
+msgid ""
+"A custom view whose items are appended below the pagination components. "
+"If the currently displayed page has a `custom_view` assigned, it will "
+"replace these view components when that page is displayed."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:41
+#: discord.ext.pages.pagination.Paginator:34
+#: discord.ext.pages.pagination.Paginator.update:30 of
+msgid ""
+"Timeout in seconds from last interaction with the paginator before no "
+"longer accepting input."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:43
+#: discord.ext.pages.pagination.Paginator:36
+#: discord.ext.pages.pagination.Paginator.update:32 of
+msgid ""
+"A list of PaginatorButtons to initialize the Paginator with. If "
+"``use_default_buttons`` is ``True``, this parameter is ignored."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:46
+#: discord.ext.pages.pagination.Paginator:39
+#: discord.ext.pages.pagination.Paginator.update:35 of
+msgid ""
+"Whether to automatically trigger the callback associated with a `Page` "
+"whenever it is displayed. Has no effect if no callback exists for a "
+"`Page`."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:45 of
+msgid "The page group select menu associated with this paginator."
+msgstr ""
+
+#: discord.ext.pages.PaginatorButton.custom_id
+#: discord.ext.pages.PaginatorButton.disabled
+#: discord.ext.pages.PaginatorButton.emoji
+#: discord.ext.pages.PaginatorButton.label
+#: discord.ext.pages.PaginatorButton.style
+#: discord.ext.pages.PaginatorButton.url discord.ext.pages.PaginatorButton.view
+#: discord.ext.pages.PaginatorMenu.custom_id
+#: discord.ext.pages.PaginatorMenu.disabled
+#: discord.ext.pages.PaginatorMenu.max_values
+#: discord.ext.pages.PaginatorMenu.min_values
+#: discord.ext.pages.PaginatorMenu.options
+#: discord.ext.pages.PaginatorMenu.placeholder
+#: discord.ext.pages.PaginatorMenu.values discord.ext.pages.PaginatorMenu.view
+#: discord.ext.pages.pagination.Paginator
+#: discord.ext.pages.pagination.PaginatorButton
+#: discord.ext.pages.pagination.PaginatorMenu of
+msgid "type"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:47 of
+msgid "Optional[List[:class:`PaginatorMenu`]]"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:51 of
+msgid "List of :class:`PageGroup` objects the user can switch between."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:53 of
+msgid "Optional[List[:class:`PageGroup`]]"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:57 of
+msgid ""
+"The index of the default page group shown when the paginator is initially"
+" sent. Defined by setting ``default`` to ``True`` on a "
+":class:`PageGroup`."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:60 of
+msgid "Optional[:class:`int`]"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:64 of
+msgid "A zero-indexed value showing the current page number."
+msgstr ""
+
+#: discord.ext.pages.PaginatorMenu.max_values:3
+#: discord.ext.pages.PaginatorMenu.min_values:3
+#: discord.ext.pages.pagination.Paginator:66
+#: discord.ext.pages.pagination.Paginator:72 of
+msgid ":class:`int`"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:70 of
+msgid "A zero-indexed value showing the total number of pages."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:76 of
+msgid ""
+"A dictionary containing the :class:`~PaginatorButton` objects included in"
+" this paginator."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:78
+#: discord.ext.pages.pagination.Paginator.update_buttons:4 of
+msgid ""
+"Dict[:class:`str`, Dict[:class:`str`, Union[:class:`~PaginatorButton`, "
+":class:`bool`]]]"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:82 of
+msgid "The user or member that invoked the paginator."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:84 of
+msgid "Optional[Union[:class:`~discord.User`, :class:`~discord.Member`]]"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:88 of
+msgid "The message the paginator is attached to."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator:90
+#: discord.ext.pages.pagination.Paginator.respond:21 of
+msgid "Union[:class:`~discord.Message`, :class:`~discord.WebhookMessage`]"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.update:1 of
+msgid ""
+"Updates the existing :class:`Paginator` instance with the provided "
+"options."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.update:5 of
+msgid ""
+":param List[Union[List[:class:`discord.Embed`]: The list of "
+":class:`PageGroup` objects, :class:`Page` objects, strings,"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.update:6
+#: discord.ext.pages.pagination.Paginator.update:8 of
+msgid "embeds, or list of embeds to paginate."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.update:7 of
+msgid ""
+":param :class:`discord.Embed`]]]]: The list of :class:`PageGroup` "
+"objects, :class:`Page` objects, strings,"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.update:28 of
+msgid "A custom view whose items are appended below the pagination components."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.update:38 of
+msgid ""
+"The interaction to use when updating the paginator. If not provided, the "
+"paginator will be updated by using its stored :attr:`message` attribute "
+"instead."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.on_timeout:1 of
+msgid "Disables all buttons when the view times out."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.disable:1 of
+msgid "Stops the paginator, disabling all of its components."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.disable:3 of
+msgid "Whether to disable components added via custom views."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.disable:5 of
+msgid "The page content to show after disabling the paginator."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.cancel:1 of
+msgid "Cancels the paginator, removing all of its components from the message."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.cancel:3 of
+msgid "Whether to remove components added via custom views."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.cancel:5 of
+msgid "The page content to show after canceling the paginator."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.goto_page:1 of
+msgid "Updates the paginator message to show the specified page number."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.goto_page:3 of
+msgid ""
+"The page to display.  .. note::      Page numbers are zero-indexed when "
+"referenced internally,     but appear as one-indexed when shown to the "
+"user."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.goto_page:3 of
+msgid "The page to display."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.goto_page:7 of
+msgid ""
+"Page numbers are zero-indexed when referenced internally, but appear as "
+"one-indexed when shown to the user."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.goto_page:10 of
+msgid ""
+"The interaction to use when editing the message. If not provided, the "
+"message will be edited using the paginator's stored :attr:`message` "
+"attribute instead."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.edit
+#: discord.ext.pages.pagination.Paginator.goto_page
+#: discord.ext.pages.pagination.Paginator.interaction_check
+#: discord.ext.pages.pagination.Paginator.respond
+#: discord.ext.pages.pagination.Paginator.send
+#: discord.ext.pages.pagination.Paginator.update_buttons
+#: discord.ui.view.View.from_message discord.ui.view.View.wait of
+msgid "戻り値"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.goto_page:14 of
+msgid "The message associated with the paginator."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.edit
+#: discord.ext.pages.pagination.Paginator.goto_page
+#: discord.ext.pages.pagination.Paginator.interaction_check
+#: discord.ext.pages.pagination.Paginator.respond
+#: discord.ext.pages.pagination.Paginator.send
+#: discord.ext.pages.pagination.Paginator.update_buttons
+#: discord.ui.view.View.from_message discord.ui.view.View.wait of
+msgid "戻り値の型"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.goto_page:15
+#: discord.ext.pages.pagination.Paginator.send:34 of
+msgid ":class:`~discord.Message`"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.interaction_check:3 of
+msgid ""
+"A callback that is called when an interaction happens within the view "
+"that checks whether the view should process item callbacks for the "
+"interaction."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.interaction_check:6 of
+msgid ""
+"This is useful to override if, for example, you want to ensure that the "
+"interaction author is a given user."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.interaction_check:9 of
+msgid "The default implementation of this returns ``True``."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.interaction_check:11 of
+msgid "If this returns ``False``, :meth:`on_check_failure` is called."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.interaction_check:15 of
+msgid ""
+"If an exception occurs within the body then the check is considered a "
+"failure and :meth:`on_error` is called."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.interaction_check:18
+#: discord.ui.view.View.on_check_failure:5 of
+msgid "The interaction that occurred."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.interaction_check:21 of
+msgid "Whether the view children's callbacks should be called."
+msgstr ""
+
+#: discord.ext.pages.PaginatorButton.disabled:3
+#: discord.ext.pages.PaginatorMenu.disabled:3
+#: discord.ext.pages.pagination.Paginator.interaction_check:22
+#: discord.ui.view.View.wait:8 of
+msgid ":class:`bool`"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.add_menu:1 of
+msgid "Adds the default :class:`PaginatorMenu` instance to the paginator."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.add_default_buttons:1 of
+msgid ""
+"Adds the full list of default buttons that can be used with the "
+"paginator. Includes ``first``, ``prev``, ``page_indicator``, ``next``, "
+"and ``last``."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.add_button:1 of
+msgid "Adds a :class:`PaginatorButton` to the paginator."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.remove_button:1 of
+msgid "Removes a :class:`PaginatorButton` from the paginator."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.update_buttons:1 of
+msgid "Updates the display state of the buttons (disabled/hidden)"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.update_buttons:3 of
+msgid "The dictionary of buttons that were updated."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.update_custom_view:1 of
+msgid "Updates the custom view shown on the paginator."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.get_page_group_content:1 of
+msgid ""
+"Returns a converted list of `Page` objects for the given page group based"
+" on the content of its pages."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.get_page_content:1 of
+msgid "Converts a page into a :class:`Page` object based on its content."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.page_action:1 of
+msgid "Triggers the callback associated with the current page, if any."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.page_action:3 of
+msgid "The interaction that was used to trigger the page action."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.send:1 of
+msgid "Sends a message with the paginated items."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.send:3 of
+msgid "A command's invocation context."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.send:5 of
+msgid ""
+"A target where the paginated message should be sent, if different from "
+"the original :class:`Context`"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.send:7 of
+msgid "An optional message shown when the paginator message is sent elsewhere."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.send:14 of
+msgid ""
+":param :class:`discord.MessageReference`: A reference to the "
+":class:`~discord.Message` to which you are replying with the paginator."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.send:12
+#: discord.ext.pages.pagination.Paginator.send:17 of
+msgid ""
+"This can be created using :meth:`~discord.Message.to_reference` or passed"
+" directly as a :class:`~discord.Message`. You can control whether this "
+"mentions the author of the referenced message using the "
+":attr:`~discord.AllowedMentions.replied_user` attribute of "
+"``allowed_mentions`` or by setting ``mention_author``."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.send:19 of
+msgid ""
+":param :class:`discord.PartialMessage`]]: A reference to the "
+":class:`~discord.Message` to which you are replying with the paginator."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.edit:15
+#: discord.ext.pages.pagination.Paginator.send:21 of
+msgid ""
+"Controls the mentions being processed in this message. If this is passed,"
+" then the object is merged with :attr:`~discord.Client.allowed_mentions`."
+" The merging behaviour only overrides attributes that have been "
+"explicitly passed to the object, otherwise it uses the attributes set in "
+":attr:`~discord.Client.allowed_mentions`. If no object is passed at all "
+"then the defaults given by :attr:`~discord.Client.allowed_mentions` are "
+"used instead."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.send:28 of
+msgid ""
+"If set, overrides the :attr:`~discord.AllowedMentions.replied_user` "
+"attribute of ``allowed_mentions``."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.edit:22
+#: discord.ext.pages.pagination.Paginator.send:30 of
+msgid "If set, deletes the paginator after the specified time."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.send:33 of
+msgid "The message that was sent with the paginator."
+msgstr ""
+
+#: discord.ui.view.View.add_item:1 of
+msgid "Adds an item to the view."
+msgstr ""
+
+#: discord.ui.view.View.add_item:3 of
+msgid "The item to add to the view."
+msgstr ""
+
+#: discord.ui.select.Select.add_option discord.ui.select.Select.append_option
+#: discord.ui.view.View.add_item of
+msgid "例外"
+msgstr ""
+
+#: discord.ui.view.View.add_item:6 of
+msgid "An :class:`Item` was not passed."
+msgstr ""
+
+#: discord.ui.view.View.add_item:7 of
+msgid ""
+"Maximum number of children has been exceeded (25)     or the row the item"
+" is trying to be added to is full."
+msgstr ""
+
+#: discord.ui.view.View.clear_items:1 of
+msgid "Removes all items from the view."
+msgstr ""
+
+#: discord.ui.view.View.disable_all_items:1 of
+msgid "Disables all items in the view."
+msgstr ""
+
+#: discord.ui.view.View.disable_all_items:3 of
+msgid "A list of items in `self.children` to not disable from the view."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.edit:1 of
+msgid "Edits an existing message to replace it with the paginator contents."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.edit:5 of
+msgid ""
+"If invoked from an interaction, you will still need to respond to the "
+"interaction."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.edit:8 of
+msgid "The message to edit with the paginator."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.edit:10 of
+msgid ""
+"Whether to suppress embeds for the message. This removes all the embeds "
+"if set to ``True``. If set to ``False`` this brings the embeds back if "
+"they were suppressed. Using this parameter requires "
+":attr:`~.Permissions.manage_messages`."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.edit:25 of
+msgid "The message that was edited. Returns ``None`` if the operation failed."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.edit:26 of
+msgid "Optional[:class:`discord.Message`]"
+msgstr ""
+
+#: discord.ui.view.View.enable_all_items:1 of
+msgid "Enables all items in the view."
+msgstr ""
+
+#: discord.ui.view.View.enable_all_items:3 of
+msgid "A list of items in `self.children` to not enable from the view."
+msgstr ""
+
+#: discord.ui.view.View.from_message:1 of
+msgid "Converts a message's components into a :class:`View`."
+msgstr ""
+
+#: discord.ui.view.View.from_message:3 of
+msgid ""
+"The :attr:`.Message.components` of a message are read-only and separate "
+"types from those in the ``discord.ui`` namespace. In order to modify and "
+"edit message components they must be converted into a :class:`View` "
+"first."
+msgstr ""
+
+#: discord.ui.view.View.from_message:8 of
+msgid "The message with components to convert into a view."
+msgstr ""
+
+#: discord.ui.view.View.from_message:10 of
+msgid "The timeout of the converted view."
+msgstr ""
+
+#: discord.ui.view.View.from_message:13 of
+msgid ""
+"The converted view. This always returns a :class:`View` and not one of "
+"its subclasses."
+msgstr ""
+
+#: discord.ui.view.View.from_message:15 of
+msgid ":class:`View`"
+msgstr ""
+
+#: discord.ui.view.View.is_dispatching:1 of
+msgid ":class:`bool`: Whether the view has been added for dispatching purposes."
+msgstr ""
+
+#: discord.ui.view.View.is_finished:1 of
+msgid ":class:`bool`: Whether the view has finished interacting."
+msgstr ""
+
+#: discord.ui.view.View.is_persistent:1 of
+msgid ":class:`bool`: Whether the view is set up as persistent."
+msgstr ""
+
+#: discord.ui.view.View.is_persistent:3 of
+msgid ""
+"A persistent view has all their components with a set ``custom_id`` and a"
+" :attr:`timeout` set to ``None``."
+msgstr ""
+
+#: discord.ui.view.View.on_check_failure:1 of
+msgid ""
+"|coro| A callback that is called when a :meth:`View.interaction_check` "
+"returns ``False``. This can be used to send a response when a check "
+"failure occurs."
+msgstr ""
+
+#: discord.ui.view.View.on_error:3 of
+msgid ""
+"A callback that is called when an item's callback or "
+":meth:`interaction_check` fails with an error."
+msgstr ""
+
+#: discord.ui.view.View.on_error:6 of
+msgid "The default implementation prints the traceback to stderr."
+msgstr ""
+
+#: discord.ui.view.View.on_error:8 of
+msgid "The exception that was raised."
+msgstr ""
+
+#: discord.ui.view.View.on_error:10 of
+msgid "The item that failed the dispatch."
+msgstr ""
+
+#: discord.ui.view.View.on_error:12 of
+msgid "The interaction that led to the failure."
+msgstr ""
+
+#: discord.ui.view.View.remove_item:1 of
+msgid "Removes an item from the view."
+msgstr ""
+
+#: discord.ui.view.View.remove_item:3 of
+msgid "The item to remove from the view."
+msgstr ""
+
+#: discord.ui.view.View.stop:1 of
+msgid "Stops listening to interaction events from this view."
+msgstr ""
+
+#: discord.ui.view.View.stop:3 of
+msgid "This operation cannot be undone."
+msgstr ""
+
+#: discord.ui.view.View.wait:1 of
+msgid "Waits until the view has finished interacting."
+msgstr ""
+
+#: discord.ui.view.View.wait:3 of
+msgid ""
+"A view is considered finished when :meth:`stop` is called, or it times "
+"out."
+msgstr ""
+
+#: discord.ui.view.View.wait:6 of
+msgid ""
+"If ``True``, then the view timed out. If ``False`` then the view finished"
+" normally."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.respond:1 of
+msgid "Sends an interaction response or followup with the paginated items."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.respond:3 of
+msgid ""
+"The interaction or BridgeContext which invoked the paginator. If passing "
+"a BridgeContext object, you cannot make this an ephemeral paginator."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.respond:6 of
+msgid ""
+"Whether the paginator message and its components are ephemeral. If "
+"``target`` is specified, the ephemeral message content will be "
+"``target_message`` instead.  .. warning::      If your paginator is "
+"ephemeral, it cannot have a timeout     longer than 15 minutes (and "
+"cannot be persistent)."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.respond:6 of
+msgid ""
+"Whether the paginator message and its components are ephemeral. If "
+"``target`` is specified, the ephemeral message content will be "
+"``target_message`` instead."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.respond:11 of
+msgid ""
+"If your paginator is ephemeral, it cannot have a timeout longer than 15 "
+"minutes (and cannot be persistent)."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.respond:14 of
+msgid ""
+"A target where the paginated message should be sent, if different from "
+"the original :class:`discord.Interaction`"
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.respond:17 of
+msgid ""
+"The content of the interaction response shown when the paginator message "
+"is sent elsewhere."
+msgstr ""
+
+#: discord.ext.pages.pagination.Paginator.respond:20 of
+msgid ""
+"The :class:`~discord.Message` or :class:`~discord.WebhookMessage` that "
+"was sent with the paginator."
+msgstr ""
+
+#: ../../ext/pages/index.rst:312
+msgid "PaginatorButton"
+msgstr ""
+
+#: discord.ext.pages.pagination.PaginatorButton:1 of
+msgid "Creates a button used to navigate the paginator."
+msgstr ""
+
+#: discord.ext.pages.pagination.PaginatorButton:3 of
+msgid ""
+"The type of button being created. Must be one of ``first``, ``prev``, "
+"``next``, ``last``, or ``page_indicator``."
+msgstr ""
+
+#: discord.ext.pages.pagination.PaginatorButton:6 of
+msgid ""
+"The label shown on the button. Defaults to a capitalized version of "
+"``button_type`` (e.g. \"Next\", \"Prev\", etc.)"
+msgstr ""
+
+#: discord.ext.pages.pagination.PaginatorButton:9 of
+msgid "The emoji shown on the button in front of the label."
+msgstr ""
+
+#: discord.ext.pages.pagination.PaginatorButton:11 of
+msgid "Whether to initially show the button as disabled."
+msgstr ""
+
+#: discord.ext.pages.pagination.PaginatorButton:13 of
+msgid ""
+"The label shown on the button when ``loop_pages`` is set to ``True`` in "
+"the Paginator class."
+msgstr ""
+
+#: discord.ext.pages.pagination.PaginatorButton:18 of
+msgid ""
+"The paginator class where this button is being used. Assigned to the "
+"button when ``Paginator.add_button`` is called."
+msgstr ""
+
+#: discord.ext.pages.pagination.PaginatorButton:21
+#: discord.ext.pages.pagination.PaginatorMenu:11 of
+msgid ":class:`Paginator`"
+msgstr ""
+
+#: discord.ext.pages.PaginatorButton.label:1 of
+msgid "The label of the button, if available."
+msgstr ""
+
+#: discord.ext.pages.PaginatorButton.custom_id:5
+#: discord.ext.pages.PaginatorButton.label:3
+#: discord.ext.pages.PaginatorButton.url:3
+#: discord.ext.pages.PaginatorMenu.placeholder:3 of
+msgid "Optional[:class:`str`]"
+msgstr ""
+
+#: discord.ext.pages.PaginatorButton.emoji:1 of
+msgid "The emoji of the button, if available."
+msgstr ""
+
+#: discord.ext.pages.PaginatorButton.emoji:3 of
+msgid "Optional[:class:`.PartialEmoji`]"
+msgstr ""
+
+#: discord.ext.pages.PaginatorButton.style:1 of
+msgid "The style of the button."
+msgstr ""
+
+#: discord.ext.pages.PaginatorButton.style:3 of
+msgid ":class:`discord.ButtonStyle`"
+msgstr ""
+
+#: discord.ext.pages.PaginatorButton.disabled:1 of
+msgid "Whether the button is disabled or not."
+msgstr ""
+
+#: discord.ext.pages.pagination.PaginatorButton.callback:3 of
+msgid "The coroutine that is called when the navigation button is clicked."
+msgstr ""
+
+#: discord.ext.pages.pagination.PaginatorButton.callback:5 of
+msgid "The interaction created by clicking the navigation button."
+msgstr ""
+
+#: discord.ext.pages.PaginatorButton.custom_id:1 of
+msgid "The ID of the button that gets received during an interaction."
+msgstr ""
+
+#: discord.ext.pages.PaginatorButton.custom_id:3 of
+msgid "If this button is for a URL, it does not have a custom ID."
+msgstr ""
+
+#: discord.ext.pages.PaginatorButton.url:1 of
+msgid "The URL this button sends you to."
+msgstr ""
+
+#: discord.ext.pages.PaginatorButton.view:1
+#: discord.ext.pages.PaginatorMenu.view:1 of
+msgid "The underlying view for this item."
+msgstr ""
+
+#: discord.ext.pages.PaginatorButton.view:3
+#: discord.ext.pages.PaginatorMenu.view:3 of
+msgid "Optional[:class:`View`]"
+msgstr ""
+
+#: ../../ext/pages/index.rst:321
+msgid "PaginatorMenu"
+msgstr ""
+
+#: discord.ext.pages.pagination.PaginatorMenu:1 of
+msgid ""
+"Creates a select menu used to switch between page groups, which can each "
+"have their own set of buttons."
+msgstr ""
+
+#: discord.ext.pages.pagination.PaginatorMenu:3 of
+msgid "The placeholder text that is shown if nothing is selected."
+msgstr ""
+
+#: discord.ext.pages.pagination.PaginatorMenu:8 of
+msgid ""
+"The paginator class where this menu is being used. Assigned to the menu "
+"when ``Paginator.add_menu`` is called."
+msgstr ""
+
+#: discord.ui.select.Select.add_option:1 of
+msgid "Adds an option to the select menu."
+msgstr ""
+
+#: discord.ui.select.Select.add_option:3 of
+msgid ""
+"To append a pre-existing :class:`discord.SelectOption` use the "
+":meth:`append_option` method instead."
+msgstr ""
+
+#: discord.ui.select.Select.add_option:6 of
+msgid ""
+"The label of the option. This is displayed to users. Can only be up to "
+"100 characters."
+msgstr ""
+
+#: discord.ui.select.Select.add_option:9 of
+msgid ""
+"The value of the option. This is not displayed to users. If not given, "
+"defaults to the label. Can only be up to 100 characters."
+msgstr ""
+
+#: discord.ui.select.Select.add_option:12 of
+msgid ""
+"An additional description of the option, if any. Can only be up to 100 "
+"characters."
+msgstr ""
+
+#: discord.ui.select.Select.add_option:15 of
+msgid ""
+"The emoji of the option, if available. This can either be a string "
+"representing the custom or unicode emoji or an instance of "
+":class:`.PartialEmoji` or :class:`.Emoji`."
+msgstr ""
+
+#: discord.ui.select.Select.add_option:18 of
+msgid "Whether this option is selected by default."
+msgstr ""
+
+#: discord.ui.select.Select.add_option:21
+#: discord.ui.select.Select.append_option:6 of
+msgid "The number of options exceeds 25."
+msgstr ""
+
+#: discord.ui.select.Select.append_option:1 of
+msgid "Appends an option to the select menu."
+msgstr ""
+
+#: discord.ui.select.Select.append_option:3 of
+msgid "The option to append to the select menu."
+msgstr ""
+
+#: discord.ext.pages.PaginatorMenu.custom_id:1 of
+msgid "The ID of the select menu that gets received during an interaction."
+msgstr ""
+
+#: discord.ext.pages.PaginatorMenu.custom_id:3 of
+msgid ":class:`str`"
+msgstr ""
+
+#: discord.ext.pages.PaginatorMenu.disabled:1 of
+msgid "Whether the select is disabled or not."
+msgstr ""
+
+#: discord.ext.pages.PaginatorMenu.max_values:1 of
+msgid "The maximum number of items that must be chosen for this select menu."
+msgstr ""
+
+#: discord.ext.pages.PaginatorMenu.min_values:1 of
+msgid "The minimum number of items that must be chosen for this select menu."
+msgstr ""
+
+#: discord.ext.pages.PaginatorMenu.options:1 of
+msgid "A list of options that can be selected in this menu."
+msgstr ""
+
+#: discord.ext.pages.PaginatorMenu.options:3 of
+msgid "List[:class:`discord.SelectOption`]"
+msgstr ""
+
+#: discord.ext.pages.PaginatorMenu.placeholder:1 of
+msgid "The placeholder text that is shown if nothing is selected, if any."
+msgstr ""
+
+#: discord.ext.pages.PaginatorMenu.values:1 of
+msgid "A list of values that have been selected by the user."
+msgstr ""
+
+#: discord.ext.pages.PaginatorMenu.values:3 of
+msgid "List[:class:`str`]"
+msgstr ""
+
+#: discord.ext.pages.pagination.PaginatorMenu.callback:3 of
+msgid "The coroutine that is called when a menu option is selected."
+msgstr ""
+
+#: discord.ext.pages.pagination.PaginatorMenu.callback:5 of
+msgid "The interaction created by selecting the menu option."
+msgstr ""
+
+#: ../../ext/pages/index.rst:330
+msgid "PageGroup"
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:1 of
+msgid "Creates a group of pages which the user can switch between."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:3 of
+msgid ""
+"Each group of pages can have its own options, custom buttons, custom "
+"views, etc."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:7 of
+msgid ""
+"If multiple :class:`PageGroup` objects have different options, they "
+"should all be set explicitly when creating each instance."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:13 of
+msgid ""
+":param List[Union[List[:class:`discord.Embed`]: The list of :class:`Page`"
+" objects, strings, embeds, or list of embeds to include in the page "
+"group. :param :class:`discord.Embed`]]]: The list of :class:`Page` "
+"objects, strings, embeds, or list of embeds to include in the page group."
+" :param label: The label shown on the corresponding PaginatorMenu "
+"dropdown option."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:16 of
+msgid "Also used as the SelectOption value."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:18 of
+msgid "The description shown on the corresponding PaginatorMenu dropdown option."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:20 of
+msgid "The emoji shown on the corresponding PaginatorMenu dropdown option."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:22 of
+msgid ""
+"Whether the page group should be the default page group initially shown "
+"when the paginator response is sent. Only one ``PageGroup`` can be the "
+"default page group."
+msgstr ""
+
+#: discord.ext.pages.pagination.PageGroup:39 of
+msgid "A custom view whose items are appended below the pagination buttons."
+msgstr ""
+

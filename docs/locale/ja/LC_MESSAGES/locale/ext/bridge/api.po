@@ -1,0 +1,485 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2021, Rapptz & 2021-present, Pycord Development
+# This file is distributed under the same license as the Pycord package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pycord 2.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 10:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../ext/bridge/api.rst:4
+msgid "API Reference"
+msgstr ""
+
+#: ../../ext/bridge/api.rst:6
+msgid ""
+"The reference manual that follows details the API of Pycord's bridge "
+"command extension module."
+msgstr ""
+
+#: ../../ext/bridge/api.rst:10
+msgid ""
+"Using the prefixed command version (which uses the ``ext.commands`` "
+"extension) of bridge commands in guilds requires "
+":attr:`Intents.message_context` to be enabled."
+msgstr ""
+
+#: ../../ext/bridge/api.rst:17
+msgid "Bots"
+msgstr ""
+
+#: ../../ext/bridge/api.rst:20
+msgid "Bot"
+msgstr ""
+
+#: discord.ext.bridge.bot.Bot:1 of
+msgid ""
+"Represents a discord bot, with support for cross-compatibility between "
+"command types."
+msgstr ""
+
+#: discord.ext.bridge.bot.Bot:3 of
+msgid ""
+"This class is a subclass of :class:`.ext.commands.Bot` and as a result "
+"anything that you can do with a :class:`.ext.commands.Bot` you can do "
+"with this bot."
+msgstr ""
+
+#: discord.ext.bridge.bot.BotBase.add_bridge_command:1 of
+msgid ""
+"Takes a :class:`.BridgeCommand` and adds both a slash and traditional "
+"(prefix-based) version of the command to the bot."
+msgstr ""
+
+#: discord.ext.bridge.bot.BotBase.bridge_command:1 of
+msgid ""
+"A shortcut decorator that invokes :func:`bridge_command` and adds it to "
+"the internal command list via :meth:`~.Bot.add_bridge_command`."
+msgstr ""
+
+#: discord.ext.bridge.bot.BotBase.bridge_command of
+msgid "戻り値"
+msgstr ""
+
+#: discord.ext.bridge.bot.BotBase.bridge_command:4 of
+msgid ""
+"A decorator that converts the provided method into an "
+":class:`.BridgeCommand`, adds both a slash and traditional (prefix-based)"
+" version of the command to the bot, and returns the "
+":class:`.BridgeCommand`."
+msgstr ""
+
+#: discord.ext.bridge.bot.BotBase.bridge_command of
+msgid "戻り値の型"
+msgstr ""
+
+#: discord.ext.bridge.bot.BotBase.bridge_command:6 of
+msgid "Callable[..., :class:`BridgeCommand`]"
+msgstr ""
+
+#: discord.ext.bridge.bot.BotBase.bridge_group:1
+#: discord.ext.bridge.core.bridge_group:1 of
+msgid "A decorator that is used to wrap a function as a bridge command group."
+msgstr ""
+
+#: discord.ext.bridge.bot.BotBase.bridge_group
+#: discord.ext.bridge.context.BridgeExtContext.delete
+#: discord.ext.bridge.core.BridgeCommand
+#: discord.ext.bridge.core.BridgeCommand.add_to
+#: discord.ext.bridge.core.BridgeCommand.after_invoke
+#: discord.ext.bridge.core.BridgeCommand.before_invoke
+#: discord.ext.bridge.core.BridgeCommand.error
+#: discord.ext.bridge.core.BridgeCommandGroup
+#: discord.ext.bridge.core.BridgeCommandGroup.command
+#: discord.ext.bridge.core.bridge_command discord.ext.bridge.core.bridge_group
+#: discord.ext.bridge.core.map_to of
+msgid "パラメータ"
+msgstr ""
+
+#: discord.ext.bridge.bot.BotBase.bridge_group:3
+#: discord.ext.bridge.core.bridge_group:3 of
+msgid ""
+"Keyword arguments that are directly passed to the respective command "
+"constructors. (:class:`.SlashCommandGroup` and "
+":class:`.ext.commands.Group`)"
+msgstr ""
+
+#: ../../ext/bridge/api.rst:36
+msgid "AutoShardedBot"
+msgstr ""
+
+#: discord.ext.bridge.bot.AutoShardedBot:1 of
+msgid ""
+"This is similar to :class:`.Bot` except that it is inherited from "
+":class:`.ext.commands.AutoShardedBot` instead."
+msgstr ""
+
+#: ../../ext/bridge/api.rst:44
+msgid "Commands"
+msgstr ""
+
+#: ../../ext/bridge/api.rst:47
+msgid "BridgeCommand"
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand:1
+#: discord.ext.bridge.core.BridgeCommandGroup:1 of
+msgid "Compatibility class between prefixed-based commands and slash commands."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand:5 of
+msgid "The slash command version of this bridge command."
+msgstr ""
+
+#: discord.ext.bridge.BridgeCommand.description_localizations
+#: discord.ext.bridge.BridgeCommand.name_localizations
+#: discord.ext.bridge.BridgeContext.is_app
+#: discord.ext.bridge.core.BridgeCommand
+#: discord.ext.bridge.core.BridgeCommandGroup of
+msgid "type"
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand:7 of
+msgid ":class:`.BridgeSlashCommand`"
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand:11 of
+msgid "The prefix-based version of this bridge command."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand:13 of
+msgid ":class:`.BridgeExtCommand`"
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand:15
+#: discord.ext.bridge.core.BridgeCommandGroup:3 of
+msgid ""
+"The callback to invoke when the command is executed. The first argument "
+"will be a :class:`BridgeContext`, and any additional arguments will be "
+"passed to the callback. This callback must be a coroutine."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand:18
+#: discord.ext.bridge.core.BridgeCommandGroup:6
+#: discord.ext.bridge.core.BridgeCommandGroup.command:3
+#: discord.ext.bridge.core.bridge_command:3 of
+msgid ""
+"Keyword arguments that are directly passed to the respective command "
+"constructors. (:class:`.SlashCommand` and :class:`.ext.commands.Command`)"
+msgstr ""
+
+#: discord.ext.bridge.BridgeCommand.name_localizations:1 of
+msgid "Returns name_localizations from :attr:`slash_variant`"
+msgstr ""
+
+#: discord.ext.bridge.BridgeCommand.name_localizations:3 of
+msgid "You can edit/set name_localizations directly with"
+msgstr ""
+
+#: discord.ext.bridge.BridgeCommand.description_localizations:11
+#: discord.ext.bridge.BridgeCommand.name_localizations:11 of
+msgid "Dict[:class:`str`, :class:`str`]"
+msgstr ""
+
+#: discord.ext.bridge.BridgeCommand.description_localizations:1 of
+msgid "Returns description_localizations from :attr:`slash_variant`"
+msgstr ""
+
+#: discord.ext.bridge.BridgeCommand.description_localizations:3 of
+msgid "You can edit/set description_localizations directly with"
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand.add_to:1 of
+msgid ""
+"Adds the command to a bot. This method is inherited by "
+":class:`.BridgeCommandGroup`."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand.add_to:3 of
+msgid "The bot to add the command to."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand.error:1 of
+msgid "A decorator that registers a coroutine as a local error handler."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand.error:3 of
+msgid ""
+"This error handler is limited to the command it is defined to. However, "
+"higher scope handlers (per-cog and global) are still invoked afterwards "
+"as a catch-all. This handler also functions as the handler for both the "
+"prefixed and slash versions of the command."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand.error:8 of
+msgid ""
+"This error handler takes two parameters, a :class:`.BridgeContext` and a "
+":class:`~discord.DiscordException`."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand.error:11 of
+msgid "The coroutine to register as the local error handler."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand.after_invoke
+#: discord.ext.bridge.core.BridgeCommand.before_invoke
+#: discord.ext.bridge.core.BridgeCommand.error of
+msgid "例外"
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand.after_invoke:12
+#: discord.ext.bridge.core.BridgeCommand.before_invoke:12
+#: discord.ext.bridge.core.BridgeCommand.error:14 of
+msgid "The coroutine passed is not actually a coroutine."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand.before_invoke:1 of
+msgid "A decorator that registers a coroutine as a pre-invoke hook."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand.before_invoke:3 of
+msgid ""
+"This hook is called directly before the command is called, making it "
+"useful for any sort of set up required. This hook is called for both the "
+"prefixed and slash versions of the command."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand.before_invoke:7 of
+msgid "This pre-invoke hook takes a sole parameter, a :class:`.BridgeContext`."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand.before_invoke:9 of
+msgid "The coroutine to register as the pre-invoke hook."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand.after_invoke:1 of
+msgid "A decorator that registers a coroutine as a post-invoke hook."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand.after_invoke:3 of
+msgid ""
+"This hook is called directly after the command is called, making it "
+"useful for any sort of clean up required. This hook is called for both "
+"the prefixed and slash versions of the command."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand.after_invoke:7 of
+msgid "This post-invoke hook takes a sole parameter, a :class:`.BridgeContext`."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommand.after_invoke:9 of
+msgid "The coroutine to register as the post-invoke hook."
+msgstr ""
+
+#: discord.ext.bridge.core.bridge_command:1 of
+msgid "A decorator that is used to wrap a function as a bridge command."
+msgstr ""
+
+#: ../../ext/bridge/api.rst:58
+msgid "BridgeCommandGroup"
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommandGroup:11 of
+msgid "The slash command version of this command group."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommandGroup:13 of
+msgid ":class:`.SlashCommandGroup`"
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommandGroup:17 of
+msgid "The prefix-based version of this command group."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommandGroup:19 of
+msgid ":class:`.ext.commands.Group`"
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommandGroup:23 of
+msgid "List of bridge commands in this group"
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommandGroup:25 of
+msgid "List[:class:`.BridgeCommand`]"
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommandGroup:29 of
+msgid "If :func:`map_to` is used, the mapped slash command."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommandGroup:31 of
+msgid "Optional[:class:`.SlashCommand`]"
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeCommandGroup.command:1 of
+msgid "A decorator to register a function as a subcommand."
+msgstr ""
+
+#: discord.ext.bridge.core.map_to:1 of
+msgid ""
+"To be used with bridge command groups, map the main command to a slash "
+"subcommand."
+msgstr ""
+
+#: discord.ext.bridge.core.map_to:4 of
+msgid "サンプル"
+msgstr ""
+
+#: discord.ext.bridge.core.map_to:16 of
+msgid "Prefixed commands will not be affected, but slash commands will appear as:"
+msgstr ""
+
+#: discord.ext.bridge.core.map_to:23 of
+msgid "The new name of the mapped command."
+msgstr ""
+
+#: discord.ext.bridge.core.map_to:25 of
+msgid "The new description of the mapped command."
+msgstr ""
+
+#: ../../ext/bridge/api.rst:72
+msgid "Command Subclasses"
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeExtCommand:1 of
+msgid ""
+"A subclass of :class:`.ext.commands.Command` that is used for bridge "
+"commands."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeExtGroup:1 of
+msgid ""
+"A subclass of :class:`.ext.commands.Group` that is used for bridge "
+"commands."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeSlashCommand:1 of
+msgid "A subclass of :class:`.SlashCommand` that is used for bridge commands."
+msgstr ""
+
+#: discord.ext.bridge.core.BridgeSlashGroup:1 of
+msgid ""
+"A subclass of :class:`.SlashCommandGroup` that is used for bridge "
+"commands."
+msgstr ""
+
+#: ../../ext/bridge/api.rst:83
+msgid "Context"
+msgstr ""
+
+#: ../../ext/bridge/api.rst:86
+msgid "BridgeContext"
+msgstr ""
+
+#: discord.ext.bridge.context.BridgeContext:1 of
+msgid ""
+"The base context class for compatibility commands. This class is an "
+":term:`abstract base class` (also known as an ``abc``), which is "
+"subclassed by :class:`BridgeExtContext` and "
+":class:`BridgeApplicationContext`. The methods in this class are meant to"
+" give parity between the two contexts, while still allowing for all of "
+"their functionality."
+msgstr ""
+
+#: discord.ext.bridge.context.BridgeContext:5 of
+msgid ""
+"When this is passed to a command, it will either be passed as "
+":class:`BridgeExtContext`, or :class:`BridgeApplicationContext`. Since "
+"they are two separate classes, it's easy to use the "
+":attr:`BridgeContext.is_app` attribute. to make different functionality "
+"for each context. For example, if you want to respond to a command with "
+"the command type that it was invoked with, you can do the following:"
+msgstr ""
+
+#: discord.ext.bridge.context.BridgeContext.defer:1
+#: discord.ext.bridge.context.BridgeContext.edit:1
+#: discord.ext.bridge.context.BridgeContext.reply:1
+#: discord.ext.bridge.context.BridgeContext.respond:1
+#: discord.ext.bridge.context.BridgeExtContext.delete:1 of
+msgid "|coro|"
+msgstr ""
+
+#: discord.ext.bridge.context.BridgeContext.respond:3 of
+msgid ""
+"Responds to the command with the respective response type to the current "
+"context. In :class:`BridgeExtContext`, this will be "
+":meth:`~.Context.reply` while in :class:`BridgeApplicationContext`, this "
+"will be :meth:`~.ApplicationContext.respond`."
+msgstr ""
+
+#: discord.ext.bridge.context.BridgeContext.reply:3 of
+msgid "Alias for :meth:`~.BridgeContext.respond`."
+msgstr ""
+
+#: discord.ext.bridge.context.BridgeContext.defer:3 of
+msgid ""
+"Defers the command with the respective approach to the current context. "
+"In :class:`BridgeExtContext`, this will be "
+":meth:`~discord.abc.Messageable.trigger_typing` while in "
+":class:`BridgeApplicationContext`, this will be "
+":attr:`~.ApplicationContext.defer`."
+msgstr ""
+
+#: discord.ext.bridge.context.BridgeContext.defer:8 of
+msgid ""
+"There is no ``trigger_typing`` alias for this method. ``trigger_typing`` "
+"will always provide the same functionality across contexts."
+msgstr ""
+
+#: discord.ext.bridge.context.BridgeContext.edit:3 of
+msgid ""
+"Edits the original response message with the respective approach to the "
+"current context. In :class:`BridgeExtContext`, this will have a custom "
+"approach where :meth:`.respond` caches the message to be edited here. In "
+":class:`BridgeApplicationContext`, this will be "
+":attr:`~.ApplicationContext.edit`."
+msgstr ""
+
+#: discord.ext.bridge.BridgeContext.is_app:1 of
+msgid "Whether the context is an :class:`BridgeApplicationContext` or not."
+msgstr ""
+
+#: discord.ext.bridge.BridgeContext.is_app:3 of
+msgid "bool"
+msgstr ""
+
+#: ../../ext/bridge/api.rst:95
+msgid "BridgeContext Subclasses"
+msgstr ""
+
+#: discord.ext.bridge.context.BridgeApplicationContext:1 of
+msgid ""
+"The application context class for compatibility commands. This class is a"
+" subclass of :class:`BridgeContext` and :class:`~.ApplicationContext`. "
+"This class is meant to be used with :class:`BridgeCommand`."
+msgstr ""
+
+#: discord.ext.bridge.context.BridgeExtContext:1 of
+msgid ""
+"The ext.commands context class for compatibility commands. This class is "
+"a subclass of :class:`BridgeContext` and :class:`~.Context`. This class "
+"is meant to be used with :class:`BridgeCommand`."
+msgstr ""
+
+#: discord.ext.bridge.context.BridgeExtContext.delete:3 of
+msgid "Deletes the original response message, if it exists."
+msgstr ""
+
+#: discord.ext.bridge.context.BridgeExtContext.delete:5 of
+msgid "If provided, the number of seconds to wait before deleting the message."
+msgstr ""
+
+#: discord.ext.bridge.context.BridgeExtContext.delete:7 of
+msgid "The reason for deleting the message. Shows up on the audit log."
+msgstr ""
+

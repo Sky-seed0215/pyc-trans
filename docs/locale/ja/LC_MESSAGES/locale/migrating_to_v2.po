@@ -1,0 +1,689 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-2021, Rapptz & 2021-present, Pycord Development
+# This file is distributed under the same license as the Pycord package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pycord 2.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 10:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../migrating_to_v2.rst:6
+msgid "Migrating to v2.0"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:8
+msgid "v2.0 introduced new Discord features and deprecated some old ones."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:10
+msgid ""
+"Part of the redesign involves making application commands and components."
+" These changes include a new :class:`Bot` class, :class:`ui.View`, and a "
+"new :class:`ApplicationContext` class. If you're interested in creating "
+"them, please check out our :resource:`guide <guide>`."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:13
+msgid "Python Version Change"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:15
+msgid ""
+"In order to make development easier and also to allow for our "
+"dependencies to upgrade to allow usage of 3.8 or higher, the library had "
+"to remove support for Python versions lower than 3.7, which essentially "
+"means that **support for Python 3.7 and below has been dropped**."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:20
+msgid "Major Model Changes"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:22
+msgid "Below are major changes that have happened in v2.0:"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:25
+msgid "Dropped User Accounts Support"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:27
+msgid ""
+"Before v2.0, user accounts were supported. This has been against the "
+"spirit of the library and discord ToS and has been removed. Thus, these "
+"features that were only applicable to them are removed:"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:29
+msgid "``bot`` argument of :meth:`Client.start` and :meth:`Client.run`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:30
+msgid "``afk`` argument of :meth:`Client.change_presence`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:31
+msgid "Classes ``Profile``, ``Relationship``, ``Call Message``, ``Group Call``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:32
+msgid ""
+"``RelationshipType``, ``HypeSquadHouse``, ``PremiumType``, "
+"``UserContentFilter``, ``FriendFlags``, ``Theme``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:33
+msgid ""
+"``GroupChannel.add_recipients``, ``remove_recipients``, ``edit`` (NOTE: "
+"``GroupChannel`` itself still remains)"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:34
+msgid "``Guild.ack``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:35
+msgid "``Client.self_bot``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:36
+msgid "``Client.fetch_user_profile``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:37
+msgid "``Message.call`` and ``ack``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:38
+msgid ""
+"``ClientUser.email``, ``premium``, ``premium_type``, "
+"``get_relationship``, ``relationships``, ``friends``, ``blocked``, "
+"``create_group``, ``edit_settings``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:39
+msgid ""
+"Arguments of ``ClientUser.edit``: ``password``, ``new_password``, "
+"``email``, ``house``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:40
+msgid ""
+"``User.relationship``, ``mutual_friends``, ``is_friend``, ``is_blocked``,"
+" ``block``, ``unblock``, ``remove_friend``, ``send_friend_request``, "
+"``profile``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:41
+msgid "Events: ``on_relationship_add`` and ``on_relationship_update``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:44
+msgid "Timezone-aware Time"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:46
+msgid ""
+"``utcnow`` becomes ``now(datetime.timezone.utc)``. If you are "
+"constructing :class:`datetime.datetime`` yourself, pass "
+"``tzinfo=datetime.timezone.utc``."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:56
+msgid ""
+"Note that newly-added :meth:`utils.utcnow()` can be used as an alias of "
+"``datetime.datetime.now(datetime.timezone.utc)``."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:61
+msgid "Asset Changes"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:63
+msgid ""
+"Asset-related attributes that previously returned hash strings (e.g. "
+":attr:`User.avatar`) now returns :class:`Asset`. :attr:`Asset.key` "
+"returns the hash from now on."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:65
+msgid ""
+"``Class.x_url`` and ``Class.x_url_as`` are removed. :meth:`Asset.replace`"
+" or :meth:`Asset.with_x` methods can be used to get specific asset sizes "
+"or types."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:66
+msgid ""
+":attr:`Emoji.url` and :attr:`PartialEmoji.url` are now :class:`str`. "
+":meth:`Emoji.save` and :meth:`Emoji.read` are added to save or read "
+"emojis."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:67
+msgid "``Emoji.url_as`` and ``PartialEmoji.url_as`` are removed."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:68
+msgid ""
+"Some :class:`AuditLogDiff` attributes now return :class:`Asset` instead "
+"of :class:`str`: :attr:`AuditLogDiff.splash`, :attr:`AuditLogDiff.icon`, "
+":attr:`AuditLogDiff.avatar`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:69
+msgid ""
+":attr:`User.avatar` returns ``None`` if the avatar is not set and is "
+"instead the default avatar; use :attr:`User.display_avatar` for pre-2.0 "
+"behavior."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:72 ../../migrating_to_v2.rst:155
+msgid "Before"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:72 ../../migrating_to_v2.rst:155
+msgid "After"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:74
+msgid "``str(user.avatar_url)``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:74
+msgid "``user.display_avatar.url``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:76
+msgid "``str(user.avatar_url_as(size=128))``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:76
+msgid "``user.display_avatar.with_size(128).url``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:78 ../../migrating_to_v2.rst:80
+msgid "``str(user.avatar_url_as(size=128, static_format=\"png\"))``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:78
+msgid "``user.display_avatar.replace(size=128, static_format=\"png\").url``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:80
+msgid "``user.display_avatar.with_size(128).with_static_format(\"png\").url``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:82
+msgid "``await user.avatar_url.read()``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:82
+msgid "``await user.display_avatar.read()``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:84
+msgid "``str(emoji.url)``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:84
+msgid "``emoji.url``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:86
+msgid "``str(emoji.url_as(size=32))``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:86
+msgid "``emoji.with_size(32).url``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:88
+msgid "``str(url_as(size=128, static_format=\"png\"))``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:88
+msgid "``emoji.replace(size=128, static_format=\"png\").url``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:90
+msgid "``str(sticker.image_url)``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:90
+msgid "``sticker.url``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:92
+msgid "``str(partialemoji.url)``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:92
+msgid "``partialemoji.url``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:96
+msgid "Webhook Changes"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:98
+msgid ""
+":class:`Webhook` and :class:`WebhookMessage` are now always asynchronous."
+" For synchronous use (``requests``), use :class:`SyncWebhook` and "
+":class:`SyncWebhookMessage`."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:99
+msgid ""
+"``WebhookAdapter``, ``AsyncWebhookAdapter``, and "
+"``RequestsWebhookAdapter`` are removed, since they are unnecessary."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:100
+msgid ""
+"``adapter`` arguments of :meth:`Webhook.partial` and "
+":meth:`Webhook.from_url` are removed. Sessions are now passed directly to"
+" ``partial`` / ``from_url``."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:125
+msgid "Intents Changes"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:127
+msgid ""
+":attr:`Intents.message_content` is now a privileged intent. Disabling it "
+"causes :attr:`Message.content`, :attr:`Message.embeds`, "
+":attr:`Message.components`, and :attr:`Message.attachments` to be empty "
+"(an empty string or an empty array), directly causing "
+":class:`ext.commands.Command`s to not run. See `here <https://support-"
+"dev.discord.com/hc/en-us/articles/4404772028055-Message-Content-"
+"Privileged-Intent-FAQ>`_ for more information."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:136
+msgid "Threads Introduced"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:138
+msgid "The following methods and attributes can return :class:`Thread` objects:"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:140
+msgid ":attr:`Message.channel`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:141
+msgid ":meth:`Client.fetch_channel`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:142
+msgid ":meth:`Guild.fetch_channel`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:143
+msgid ":attr:`ext.commands.ChannelNotReadable.argument`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:144
+msgid ":class:`ext.commands.NSFWChannelRequired`'s ``channel`` argument"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:145
+msgid ":meth:`Client.get_channel`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:150
+msgid "Permission Changes"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:152
+msgid ""
+"``permissions_in`` has been removed in favor of checking the permissions "
+"of the channel for said user."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:157
+msgid "``User.permissions_in``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:157 ../../migrating_to_v2.rst:159
+msgid "``abc.GuildChannel.permissions_for``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:159
+msgid "``Member.permissions_in``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:165
+msgid "Edit Method Behavior Change"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:167
+msgid ""
+"``edit`` methods of most classes no longer update the cache in-place, and"
+" instead returns the modified object."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:172
+msgid "Positional-Keyword Argument Split"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:174
+msgid "The following are now positional only:"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:176
+msgid ":meth:`abc.GuildChannel.permissions_for`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:177
+msgid ":meth:`Guild.get_channel`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:178
+msgid ":meth:`Guild.get_role`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:179
+msgid ":meth:`Guild.get_member_named`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:180
+msgid ":meth:`Guild.fetch_member`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:181
+msgid ":meth:`Guild.fetch_emoji`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:182
+msgid ":meth:`abc.Messageable.fetch_message`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:183
+msgid ":meth:`PartialMessageable.get_partial_message`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:185
+msgid "The following are now keyword only:"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:187
+msgid ":func:`utils.oauth_url`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:188
+msgid ":meth:`Reaction.users`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:193
+msgid "Event Changes"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:195
+msgid ""
+":func:`on_presence_update` replaces `on_member_update` for updates to "
+":attr:`Member.status` and :attr:`Member.activities`."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:196
+msgid ""
+"``on_private_channel_create/delete`` will no longer be dispatched due to "
+"Discord changes."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:197
+msgid ""
+":func:`on_socket_raw_receive` is no longer dispatched for incomplete "
+"data, and the value passed is always decompressed and decoded to "
+":class:`str`. Previously, when received a multi-part zlib-compressed "
+"binary message, :func:`on_socket_raw_receive` was dispatched on all "
+"messages with the compressed, encoded :class:`bytes`."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:203
+msgid "Message.type For Replies"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:205
+msgid ""
+":attr:`Message.type` now returns :attr:`MessageType.reply` for replies, "
+"instead of :attr:`MessageType.default`."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:210
+msgid "Sticker Changes"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:212
+msgid ""
+"``Sticker.preview_image`` was removed as Discord no longer provides the "
+"data."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:213
+msgid ""
+"``StickerType``, an enum of sticker formats, is renamed to "
+":class:`StickerFormatType`. Old name is used for a new enum with "
+"different purpose (checking if the sticker is guild sticker or Nitro "
+"sticker)."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:214
+msgid ""
+":attr:`Message.stickers` is now List[:class:`StickerItem`] instead of "
+"List[:class:`Sticker`]. While :class:`StickerItem` supports some "
+"operations of previous ``Sticker``, ``description`` and ``pack_id`` "
+"attributes do not exist. :class:`Sticker` can be fetched via "
+":meth:`StickerItem.fetch` method."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:215
+msgid ""
+"``Sticker.image`` is removed. :class:`Sticker` can still be fetched via "
+":meth:`Sticker.read` or :meth:`Sticker.save` and its URL can be accessed "
+"via :attr:`Sticker.url`, just like new :class:`Emoji`."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:216
+msgid ""
+"Due to the introduction of :class:`GuildSticker`, ``Sticker.tags`` is "
+"removed from the parent class :class:`Sticker` and moved to "
+":attr:`StandardSticker.tags`."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:221
+msgid "Type Changes"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:223
+msgid "Many method arguments now reject ``None`` or return ``None``."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:225
+msgid ""
+":attr:`DMChannel.recipient` is now optional, and will return ``None`` in "
+"many cases."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:226
+msgid ""
+":attr:`User.avatar` returns ``None`` if the avatar is not set and is "
+"instead the default avatar."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:227
+msgid ""
+":attr:`Guild.create_text_channel`'s ``topic`` argument no longer accepts "
+"``None``."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:228
+msgid ":attr:`Guild.vanity_invite` can now return ``None``."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:229
+msgid ":attr:`Template.edit`'s ``name`` argument no longer accepts ``None``."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:230
+msgid ":attr:`Member.edit`'s ``roles`` argument no longer accepts ``None``."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:231
+msgid ""
+":attr:`Bot.add_listener` and :attr:`Bot.remove_listener`'s ``name`` "
+"arguments no longer accept ``None``."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:232
+msgid ""
+"The following :class:`.ext.commands.Context` attributes can now be "
+"``None``: ``prefix``, ``command``, ``invoked_with``, "
+"``invoked_subcommand``."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:233
+msgid ":attr:`ext.commands.Command.help` can now be ``None``."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:238
+msgid "Miscellaneous Changes"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:240
+msgid "The following were removed:"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:242
+msgid "``Client.request_offline_members``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:243
+msgid "``Client.logout``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:244
+msgid "``ExtensionNotFound.original``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:245
+msgid "``MemberCacheFlags.online``"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:246
+msgid "``guild_subscriptions`` argument of :class:`Client`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:247
+msgid "``fetch_offline_members`` argument of :class:`Client`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:248
+msgid ""
+"``HelpCommand.clean_prefix`` moved to "
+":attr:`ext.commands.Context.clean_prefix`"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:249
+msgid ""
+"``VerificationLevel.table_flip`` (alias of ``high``) was removed. "
+"``extreme``, ``very_high``, and ``double_table_flip`` attributes were "
+"removed and replaced with :attr:`VerificationLevel.highest`."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:251
+msgid "The following were renamed:"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:253
+msgid ""
+":attr:`Colour.blurple` is renamed to :attr:`Colour.og_blurple`, and "
+":attr:`Colour.blurple` now returns the newer color."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:254
+msgid ""
+"``missing_perms`` arguments and attributes of "
+":class:`ext.commands.MissingPermissions` and "
+":class:`ext.commands.BotMissingPermissions` are renamed to "
+"``missing_permissions``."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:256
+msgid "The following were changed in behavior:"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:258
+msgid ""
+":class:`Embed` that has a value is always considered truthy. Previously "
+"it only considered text fields."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:259
+msgid ""
+":meth:`Bot.add_cog` now raises an error when a cog with the same name is "
+"already registered. ``override`` argument can be used to bring back the "
+"1.x behavior."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:260
+msgid ""
+":meth:`StageChannel.edit` can no longer edit ``topic``. Use "
+":meth:`StageInstance.edit` instead."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:261
+msgid ":meth:`StageChannel.clone` no longer clones its topic."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:263
+msgid "The following were changed in types:"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:265
+msgid ""
+":attr:`ext.commands.Command.clean_params` is now a :class:`dict`, not "
+":class:`OrderedDict`."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:266
+msgid ""
+"``Reaction.custom_emoji`` is now :attr:`Reaction.is_custom_emoji` for "
+"consistency."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:267
+msgid ""
+":attr:`IntegrationAccount.id` is now :class:`str`, instead of "
+":class:`int`, due to Discord changes."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:268
+msgid ""
+":attr:`AuditLogDiff.type` is now Union[:class:`ChannelType`, "
+":class:`StickerType`], instead of :class:`ChannelType`."
+msgstr ""
+
+#: ../../migrating_to_v2.rst:271
+msgid "Parting Words"
+msgstr ""
+
+#: ../../migrating_to_v2.rst:273
+msgid ""
+"The v2.0 of the library implemented a lot of new features. To implement "
+"newer features, such as slash commands, they can be seen on our "
+":resource:`guide <guide>`."
+msgstr ""
+
